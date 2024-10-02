@@ -42,15 +42,16 @@ body {
     .container .side .me .portrait {
       margin: 0 auto;
       margin-bottom: 1rem;
-      width: 8rem;
-      height: 8rem;
-      overflow: hidden;
-      position: relative; }
+      /* width: 15rem;
+      height: 15rem; */
+      /* overflow: visible; */
+      /* position: relative;  */
+    }
       .container .side .me .portrait .loading {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 8rem;
+        width: 10rem;
         height: 4rem;
         margin: 0 auto; }
       .container .side .me .portrait .loading span {
