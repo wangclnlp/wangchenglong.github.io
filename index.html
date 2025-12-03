@@ -1,254 +1,308 @@
-<style>
-    .main {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-</style>
-    
-
-
 <!DOCTYPE html>
-<html lang="zh-cn">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
-    />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection" content="email=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="renderer" content="webkit">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <title>王成龙个人简介</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/typo.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <script>
-        function loading() {
-            document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('loading')[0].style.display = 'none';
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chenglong Wang">
+    <meta property="og:title" content="Chenglong Wang">
+	<meta property="og:description" content="PhD candidate, Northeastern University (Shenyang, China)">
+    <meta property="og:image" content="https://www.nicklashansen.com/files/me.png">
+	<meta property="og:url" content="https://www.nicklashansen.com/">
+	<meta name="twitter:card" content="summary_large_image">
+    <title>Chenglong Wang</title>
+    <link rel="apple-touch-icon" href="files/ucsd-logo.png">
+    <link rel="icon" type="image/png" href="files/ucsd-logo.png">
+    <link rel="manifest" href="files/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div class="header noselect">
+    <div class="header-div content row">
+        <div class="header-profile-picture"></div>
+        <div class="header-text">
+            <div class="header-name">
+                <h1>Chenglong Wang</h1>
+            </div>
+            <div class="header-subtitle">
+                PhD candidate, Northeastern University (Shenyang, China)
+            </div>
+            <div class="header-links">
+                <a class="btn" href="clwang1119@gmail.com">Email</a> /
+                <a class="btn" href="https://scholar.google.com/citations?user=_pu31FgAAAAJ&hl=en">Google Scholar</a> /
+                <a class="btn" href="https://github.com/wangclnlp">GitHub</a> 
+                <!-- <a class="btn" href="https://bsky.app/profile/ncklashansen.bsky.social">Bluesky</a> / -->
+                <!-- <a class="btn" href="https://www.linkedin.com/in/ncklas">LinkedIn</a> / -->
+                <!-- <a class="btn" href="files/cv.pdf">CV</a> -->
+            </div>
+        </div>
+    </div>
+</div>
 
-    <header class="header"></header>
+<div class="content" style="padding-bottom: 64px;">
+    <div>
+        <p>
+            I am a Ph.D student of the 2021 cohort at the Natural Language Processing Laboratory of Northeastern University (co-advisors: Prof. <a href="http://team.neu.edu.cn/NEUNLPLab/zh_CN/article/411756/content/2225.htm#article">Tong Xiao</a> and Prof. <a href="http://team.neu.edu.cn/NEUNLPLab/zh_CN/article/411756/content/2224.htm#article">Jingbo Zhu</a>). My research focuses on language model alignment, with current interests including: (1) improving the training efficiency of large language models through reinforcement learning; (2) developing and training reward models; and (3) adapting RL-based methods to non-LLM paradigms such as multimodal large language models and diffusion-based language models.
+            In addition, I have participated in several machine translation workshops, including <a href="https://kheafield.com/speed/2020/">WGT</a> (2020), <a href="https://aclanthology.org/2020.wmt-1.117.pdf">QE</a> (2020), and <a href="https://kheafield.com/speed/2021/"> WMT </a> (Efficiency and Translation tasks, 2021).
+        </p>
+    </div>
+    <div>
+        <h2 class="noselect">Education/Experience</h2>
+        <ul>
+            <li>Ph.D. Student, Northeastern University, 2021 – now</li>
+            <li>M.S., Northeastern University, 2020 – 2021 (Transferred to Ph.D. program)</li>
+            <li>B.S., Northeastern University, 2016 – 2020</li>            
+        </ul>
 
-    <article class="container">
-        <section class="side" id="side">
-            <!-- 个人肖像 -->
-            <section class="me">
-                <img class="avatar" src="./assets/images/avatar1.png" style="width: 10rem; height: 12rem; object-fit: cover;">
-                <h1 class="name">Chenglong Wang|王成龙 </h1>
-                <h4 class="info-job">Ph.D. Student</h4>
-            </section>
+        <h2 class="noselect">Selected Publications</h2>
+        <p>Papers sorted by recency. Representative papers are <span style="background-color: #fff8df">highlighted</span>. A full list can be found in <a href="https://scholar.google.com/citations?user=_pu31FgAAAAJ&hl=en">Google Scholar</a>. </p>
 
-            <!-- 基本信息 -->
-            <section class="profile info-unit">
-                <h2>
-                    <i class="fa fa-user" aria-hidden="true"></i>Information</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>Major</label>
-                        <span>Computer Science</span>
-                    </li>
-                    <li>
-                        <label>Email</label>
-                        <a target="_blank">clwang1119@gmail.com</a>
-                    </li>
-                    <li>
-                        <label>Github</label>
-                        <a href="https://github.com/wangclnlp" target="_blank">wangclnlp</a>
-                    </li>
-                </ul>
-            </section>
+        <p class="bold">2026</p>
 
-            <!-- 技能点 -->
-            <section class="skill info-unit">
-                <h2>
-                    <i class="fa fa-code" aria-hidden="true"></i>Code Languages</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>Python</label>
-                    </li>
-                    <li>
-                        <label>C/C++</label>
-                    </li>
-                </ul>
-            </section>
-            
-            <!-- thinking
-            <section class="skill info-unit">
-                <h2>
-                    <i class="fa fa-spinner" aria-hidden="true"></i>Recent Thoughts&News</h2>
-                <hr/>
-                <ul>
-                    <label>
-                        I am very fond of my latest work, RoVRM, and I see myself progressing because of this project😊. 
-                        I am deeply grateful to my co-authors for their generous contributions and support throughout the work🌹.
-                    </label>
-                </ul>
-            </section> -->
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/probing-rm.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Probing Preference Representations: A Multi-Dimensional Evaluation and Analysis Method for Reward Models</a><br/>
+                <span class="bold">Chenglong Wang</span>,  Yifu Huo, Yang Gan, Yongyu Mu, Qiaozhi He, Murun Yang, Bei Li, Chunliang Zhang, Tongran Liu, Anxiang Ma, Zhengtao Yu, Jingbo Zhu, Tong Xiao
+                <br/>
+                <span class="italic">AAAI, 2026<br/>
+                <a class="btn btn-red" href="https://github.com/wangclnlp/MRMBench">pdf</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/probing-rm">code</a>
+            </div>
+        </div>
 
-        </section>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/gram-rr.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >GRAM-R$^2$: Self-Training Generative Foundation Reward Models for Reward Reasoning</a><br/>
+                <span class="bold">Chenglong Wang</span>, Yongyu Mu, Hang Zhou, Yifu Huo, Ziming Zhu, Jiali Zeng, Murun Yang, Bei Li, Tong Xiao, Xiaoyang Hao, Chunliang Zhang, Fandong Meng, Jingbo Zhu
+                <br/>
+                <span class="italic">AAAI, 2026<br/>
+                <a class="btn btn-red" href="https://arxiv.org/pdf/2509.02492">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/GRAM/tree/main/extensions/GRAM-RR">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram-rr-68b2c8d83e35625bc57c7e81">models</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram-rr-68b2c8d83e35625bc57c7e81">dataset</a> 
+            </div>
+        </div>
 
-        <section class="main">
-            <!-- 自我评价 -->
-            <section class="work info-unit">
-            <h2>
-            <i class="fa fa-pencil" aria-hidden="true"></i><span style="color: rgba(77, 3, 156, 0.908);">About Me</span></h2>
-            <hr/>
-            <p>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspI am a Ph.D student of the 2021 cohort at the Natural Language Processing Laboratory of Northeastern University (co-advisors: Prof. <a href="http://team.neu.edu.cn/NEUNLPLab/zh_CN/article/411756/content/2225.htm#article">Tong Xiao</a> and Prof. <a href="http://team.neu.edu.cn/NEUNLPLab/zh_CN/article/411756/content/2224.htm#article">Jingbo Zhu</a>). My research focuses on the methods of language model alignment, with a current emphasis on: 1) the training efficiency of large language models based on reinforcement learning; 2) the construction and training of reward models; 3) multimodal language model alignment, such as vision-llm alignment, as detailed in my publications.
-            Additionally, I have participated in machine translation workshops such as WGT(2020), QE(2020), and WMT(Efficiency and Translation tasks, 2021).
-            </p>
-            </section>
-            <br>
+        <p class="bold">2025</p>
 
-            <!-- 教育经历 -->
-            <section class="edu info-unit">
-                <h2>
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i><span style="color: rgba(77, 3, 156, 0.908);">Education</span></h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>
-                            <span style="font-size:14px;">Northeastern University (Shenyang, China) - Computer Science and Technology (Ph.D. Student)</span>
-                            <time style="font-size:14px;">09/2021 - Present</time>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <span style="font-size:14px;">Northeastern University (Shenyang, China) - Computer Science and Technology (Bachelor)</span>
-                            <time style="font-size:14px;">09/2016 - 07/2020</time>
-                        </h3>
-                    </li>
-                </ul>
-            </section>
-            <br>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/mro.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >MRO: Enhancing Reasoning in Diffusion Language Models via Multi-Reward Optimization</a><br/>
+                <span class="bold">Chenglong Wang</span>, Yang Gan, Hang Zhou, Chi Hu, Yongyu Mu, Kai Song, Murun Yang, Bei Li, Chunliang Zhang, Tongran Liu, Jingbo Zhu, Zhengtao Yu, Tong Xiao
+                <br/>
+                <span class="italic">NeurIPS, 2025<br/>
+                <a class="btn btn-red" href="https://arxiv.org/pdf/2510.21473">pdf</a> / <a class="btn" href="https://github.com/wangclnlp/MRO">code</a>
+            </div>
+        </div>
 
-			<!-- paper list -->
-            <section class="work info-unit">
-            <h2>
-            <i class="fa fa-book" aria-hidden="true"></i><span style="color: rgba(77, 3, 156, 0.908);">Selected Publications (<a href="https://scholar.google.com/citations?user=_pu31FgAAAAJ&hl=en">full list</a>)</span></h2>
-		    <hr/>
-            <b><span style="color: rgb(0, 123, 255);">2025:</span></b> <br>
-            <b>GRAM: A Generative Foundation Reward Model for Reward Generalization. ICML 2025. </b> <a href="https://www.arxiv.org/abs/2506.14175">[pdf]</a> 
-            <a href="https://github.com/NiuTrans/GRAM">[code]</a> <br>
-            <i><u>Chenglong Wang</u>, Yang Gan, Yifu Huo, Yongyu Mu, Qiaozhi He, Murun Yang, Bei Li, Tong Xiao, Chunliang Zhang, Tongran Liu, Jingbo Zhu</i> <br>
-            <b>RoVRM: A Robust Visual Reward Model Optimized via Auxiliary Textual Preference Data. AAAI 2025. </b> <a href="https://www.arxiv.org/abs/2408.12109">[pdf]</a> 
-            <a href="https://github.com/wangclnlp/Vision-LLM-Alignment">[code]</a> <br>
-            <i><u>Chenglong Wang</u>, Yang Gan, Yifu Huo, Yongyu Mu, Murun Yang, Qiaozhi He, Tong Xiao, Chunliang Zhang, Tongran Liu, Quan Du, Di Yang, Jingbo Zhu</i> <br>
-            <b>Learning Evaluation Models from Large Language Models for Sequence Generation. TASLP 2025. </b> <a href="https://arxiv.org/abs/2308.04386">[pdf]</a> 
-            <a href="https://github.com/wangclnlp/CSEM">[code]</a> <br>
-			<i><u>Chenglong Wang</u>, Hang Zhou, Kaiyan Chang, Tongran Liu, Chunliang Zhang, Quan Du, Tong Xiao, Jingbo Zhu</i> <br>
-            <br>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/latexTrans.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >LaTeXTrans: Structured LaTeX Translation with Multi-Agent Coordination</a><br/>
+                Ziming Zhu, <span class="bold">Chenglong Wang</span>, Shunjie Xing, Yifu Huo, Fengning Tian, Quan Du, Di Yang, Chunliang Zhang, Tong Xiao, Jingbo Zhu
+                <br/>
+                <span class="italic">EMNLP, 2025<br/>
+                <a class="btn btn-red" href="http://arxiv.org/pdf/2508.18791">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/LaTeXTrans">code</a>
+            </div>
+        </div>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/hybrid_tts.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models</a><br/>
+                Kaiyan Chang, Yonghao Shi, <span class="bold">Chenglong Wang</span>,  Hang Zhou, Chi Hu, Xiaoqian Liu, Yingfeng Luo, Yuan Ge, Tong Xiao, Jingbo Zhu
+                <br/>
+                <span class="italic">EMNLP, 2025<br/>
+                <a class="btn btn-red" href="https://aclanthology.org/2025.emnlp-main.931.pdf">pdf</a> / <a class="btn" href="https://github.com/Lucky-259/Hybrid_TTS">code</a>
+            </div>
+        </div>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/heal.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >HEAL: A Hypothesis-Based Preference-Aware Analysis Framework</a><br/>
+                Yifu Huo, <span class="bold">Chenglong Wang</span>, Qiren Zhu, Shunjie Xing, Tong Xiao, Chunliang Zhang, Tongran Liu, Jinbo Zhu
+                <br/>
+                <span class="italic">EMNLP Findings, 2025<br/>
+                <a class="btn btn-red" href="https://aclanthology.org/anthology-files/anthology-files/pdf/findings/2025.findings-emnlp.473.pdf">pdf</a> / <a class="btn" href="https://github.com/if-noc/HEAL">code</a>
+            </div>
+        </div>
+
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/gram.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >GRAM: A Generative Foundation Reward Model for Reward Generalization</a><br/>
+                <span class="bold">Chenglong Wang</span>, Yang Gan, Yifu Huo, Yongyu Mu, Qiaozhi He, Murun Yang, Bei Li, Tong Xiao, Chunliang Zhang, Tongran Liu, Jingbo Zhu
+                <br/>
+                <span class="italic">ICML, 2025<br/>
+                <a class="btn btn-red" href="https://www.arxiv.org/abs/2506.14175">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/GRAM">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram">models</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram">dataset</a> 
+            </div>
+        </div>
+
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/rovrm.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold">RoVRM: A Robust Visual Reward Model Optimized via Auxiliary Textual Preference Data</a><br/>
+                <span class="bold">Chenglong Wang</span>, Yang Gan, Yifu Huo, Yongyu Mu, Murun Yang, Qiaozhi He, Tong Xiao, Chunliang Zhang, Tongran Liu, Quan Du, Di Yang, Jingbo Zhu
+                <br/>
+                <span class="italic">AAAI, 2025<br/>
+                <a class="btn btn-red" href="https://www.arxiv.org/abs/2408.12109">pdf</a> / <a class="btn" href="https://github.com/wangclnlp/Vision-LLM-Alignment">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/rovrm">models</a> 
+            </div>
+        </div>
+
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/taslp.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold">Learning Evaluation Models from Large Language Models for Sequence Generation</a><br/>
+                <span class="bold">Chenglong Wang</span>, Hang Zhou, Kaiyan Chang, Tongran Liu, Chunliang Zhang, Quan Du, Tong Xiao, Jingbo Zhu<br/>
+                <span class="italic">TASLP, 2025<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2308.04386">pdf</a> / <a class="btn" href="https://github.com/wangclnlp/CSEM">code</a> 
+            </div>
+        </div>
+
+        <p class="bold">2024</p>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/pmi.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Revealing the Parallel Multilingual Learning within Large Language Models</a><br/>
+                Yongyu Mu, Peinan Feng, Zhiquan Cao, Yuzhang Wu, Bei Li, <span class="bold">Chenglong Wang</span>, Tong Xiao, Kai Song, Tongran Liu, Chunliang Zhang, Jingbo Zhu<br/>
+                <span class="italic">EMNLP, 2024<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2403.09073">pdf</a> / <a class="btn" href="https://github.com/takagi97/LLMs-are-parallel-multilingual-learners">code</a> 
+            </div>
+        </div>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/pcrm.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Prior Constraints-based Reward Model Training for Aligning Large Language Models</a><br/>
+                Hang Zhou, <span class="bold">Chenglong Wang</span>, Yimin Hu, Tong Xiao, Chunliang Zhang, Jingbo Zhu<br/>
+                <span class="italic">CCL, 2024<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2404.00978">pdf</a> / <a class="btn" href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/PCRM">code</a> 
+            </div>
+        </div>
+
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/hbat.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Hybrid Alignment Training for Large Language Models</a><br/>
+                <span class="bold">Chenglong Wang</span>, Hang Zhou, Kaiyan Chang, Bei Li, Yongyu Mu, Tong Xiao, Tongran Liu, JingBo Zhu<br/>
+                <span class="italic">ACL Findings, 2024<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2406.15178">pdf</a> / <a class="btn" href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/main/examples/hybrid_alignment_training">code</a> 
+            </div>
+        </div>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/prompting_survey.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Efficient Prompting Methods for Large Language Models: A Survey</a><br/>
+                Kaiyan Chang, Songcheng Xu, <span class="bold">Chenglong Wang</span>, Yingfeng Luo, Tong Xiao, Jingbo Zhu<br/>
+                <span class="italic">arXiv, 2024<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2404.01077">pdf</a>
+            </div>
+        </div>
+
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/esrl.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >ESRL: Efficient Sampling-based Reinforcement Learning for Sequence Generation</a><br/>
+                <span class="bold">Chenglong Wang</span>, Hang Zhou, Yimin Hu, Yifu Huo, Bei Li, Tongran Liu, Tong Xiao, Jingbo Zhu<br/>
+                <span class="italic">ACL Findings, 2024<br/>
+                <a class="btn btn-red" href="https://arxiv.org/pdf/2308.02223.pdf">pdf</a> / <a class="btn" href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/main/examples/esrl">code</a> 
+            </div>
+        </div>
+
+        <p class="bold">2022</p>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/ackd.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >Improved Knowledge Distillation for Pre-trained Language Models via Knowledge Selection</a><br/>
+                <span class="bold">Chenglong Wang</span>, Yi Lu, Yongyu Mu, Yimin Hu, Tong Xiao and Jingbo Zhu<br/>
+                <span class="italic">EMNLP Findings, 2022<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2302.00444">pdf</a>
+            </div>
+        </div>
+
+        <p class="bold">2021</p>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/wngt21.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold">The NiuTrans System for the WMT21 Efficiency Task</a><br/>
+                <span class="bold">Chenglong Wang</span>, Chi Hu, Yongyu Mu, Zhongxiang Yan, Siming Wu, Minyi Hu, Hang Cao, Bei Li, Ye Lin, Tong Xiao, Jingbo Zhu<br/>
+                <span class="italic">EMNLP Workshop, 2021<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2109.08003">pdf</a>
+            </div>
+        </div>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/rankingnas.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold">RankNAS: Efficient Neural Architecture Search by Pairwise Ranking</a><br/>
+                Chi Hu, <span class="bold">Chenglong Wang</span>, Xiangnan Ma, Xia Meng, Yinqiao Li, Tong Xiao, Jingbo Zhu and Changliang Li<br/>
+                <span class="italic">EMNLP, 2021<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2109.07383">pdf</a>
+            </div>
+        </div>
+
+        <p class="bold">2020</p>
+
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/qe20.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold">The NiuTrans System for WNGT 2020 Efficiency Task</a><br/>
+                Chi Hu, Bei Li, Yinqiao Li, Ye Lin, Yanyang Li, <span class="bold">Chenglong Wang</span>, Tong Xiao, Jingbo Zhu<br/>
+                <span class="italic">EMNLP, 2021<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2109.08008">pdf</a>
+            </div>
+        </div>
 
 
-            <b><span style="color: rgb(0, 123, 255);">2024:</span></b> <br>
-            <b>LRHP: Learning Representations for Human Preferences via Preference Pairs. arXiv 2024. </b> <a href="https://arxiv.org/abs/2410.04503">[pdf]</a> 
-            <a href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/main">[code]</a> <br>
-            <i><u>Chenglong Wang</u>, Yang Gan, Yifu Huo, Yongyu Mu, Qiaozhi He, Murun Yang, Tong Xiao, Chunliang Zhang, Tongran Liu, Jingbo Zhu</i> <br>
+    </div>
 
-            <!-- <b>Cross-layer Attention Sharing for Large Language Models. arXiv 2024. </b> <a href="https://arxiv.org/abs/2408.01890">[pdf]</a> 
-            <a href="">[code]</a> <br>
-            <i>Yongyu Mu, Yuzhang Wu, Yuchun Fan, <u>Chenglong Wang</u>, Hengyu Li, Qiaozhi He, Murun Yang, Tong Xiao, Jingbo Zhu</i> <br> -->
 
-            <b>Revealing the Parallel Multilingual Learning within Large Language Models. EMNLP 2024. </b> <a href="https://arxiv.org/abs/2403.09073">[pdf]</a> 
-            <a href="https://github.com/takagi97/LLMs-are-parallel-multilingual-learners">[code]</a> <br>
-            <i>Yongyu Mu, Peinan Feng, Zhiquan Cao, Yuzhang Wu, Bei Li, <u>Chenglong Wang</u>, Tong Xiao, Kai Song, Tongran Liu, Chunliang Zhang, Jingbo Zhu</i> <br>
+    <div>
+        <h2 class="noselect">Select Open-Source Projects</h2>
 
-            <b>Prior Constraints-based Reward Model Training for Aligning Large Language Models. CCL 2024. </b> <a href="https://arxiv.org/abs/2404.00978">[pdf]</a>
-            <a href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/PCRM">[code]</a><br>
-			<i>Hang Zhou, <u>Chenglong Wang</u>, Yimin Hu, Tong Xiao, Chunliang Zhang, Jingbo Zhu</i> <br>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/vision_alignment.png);"></div>
+            <div class="row-text">
+                <a class="bold" href="https://github.com/NiuTrans/Vision-LLM-Alignment">Vision-LLM-Alignment<span class="stars"> <img src="https://img.shields.io/github/stars/NiuTrans/Vision-LLM-Alignment.svg?style=social&label=Star"> <img src="https://img.shields.io/github/forks/NiuTrans/Vision-LLM-Alignment.svg?style=social&label=Fork"> </span></a><br/>
+                It is an alignment system that provides complete implementations of SFT, RLHF, and DPO for vision-based LLMs, including the LLaVA family and the LLaMA-3.2-Vision models. In this open-source release, we also provide a cleaned visual preference <a href="https://huggingface.co/datasets/NiuTrans/vision-feedback-mix-binarized-cleaned">dataset</a>.
+            </div>
+        </div>
 
-            <b>Hybrid Alignment Training for Large Language Models. Findings of ACL 2024. </b> <a href="https://arxiv.org/abs/2406.15178">[pdf]</a> 
-            <a href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/main/examples/hybrid_alignment_training">[code]</a> <br>
-            <i><u>Chenglong Wang</u>, Hang Zhou, Kaiyan Chang, Bei Li, Yongyu Mu, Tong Xiao, Tongran Liu, JingBo Zhu</i> <br>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/deepspeed_chat.png);"></div>
+            <div class="row-text">
+                <a class="bold" href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension">DeepSpeed-Chat-Extension<span class="stars"> <img src="https://img.shields.io/github/stars/wangclnlp/DeepSpeed-Chat-Extension.svg?style=social&label=Star"> <img src="https://img.shields.io/github/forks/wangclnlp/DeepSpeed-Chat-Extension.svg?style=social&label=Fork"> </span></a><br/>
+                This system extends DeepSpeed-Chat with additional modules for fine-tuning LLMs via SFT and RLHF/DPO. It integrates our hybrid alignment training framework as well as the ESRL method, both of which contribute to improved alignment performance in LLMs.
+            </div>
+        </div>
+    </div>
 
-			<b>Efficient Prompting Methods for Large Language Models: A Survey. arXiv 2024. </b> <a href="https://arxiv.org/abs/2404.01077">[pdf]</a><br>
-			<i>Kaiyan Chang, Songcheng Xu, <u>Chenglong Wang</u>, Yingfeng Luo, Tong Xiao, Jingbo Zhu</i> <br>
-
-            <b>ESRL: Efficient Sampling-based Reinforcement Learning for Sequence Generation. AAAI 2024. </b> <a href="https://arxiv.org/pdf/2308.02223.pdf">[pdf]</a>
-            <a href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension/tree/main/examples/esrl">[code]</a><br>
-            <i><u>Chenglong Wang</u>, Hang Zhou, Yimin Hu, Yifu Huo, Bei Li, Tongran Liu, Tong Xiao, Jingbo Zhu</i> <br>
-            <br>
-            
-            <!-- <b><span style="color: rgb(0, 123, 255);">2023:</span></b> <br> -->
-            
-            <b><span style="color: rgb(0, 123, 255);">2022:</span></b> <br>
-			<b>Improved Knowledge Distillation for Pre-trained Language Models via Knowledge Selection. Findings of EMNLP 2022. </b> <a href="https://arxiv.org/abs/2302.00444">[pdf]</a><br>
-			<i><u>Chenglong Wang</u>, Yi Lu, Yongyu Mu, Yimin Hu, Tong Xiao and Jingbo Zhu.</i> <br>
-            <br>
-            
-            <b><span style="color: rgb(0, 123, 255);">2021:</span></b> <br>
-			<b>The NiuTrans System for the WMT21 Efficiency Task. EMNLP Workshop 2021.</b> <a href="https://arxiv.org/abs/2109.08003">[pdf]</a><br>
-			<i><u>Chenglong Wang</u>, Chi Hu, Yongyu Mu, Zhongxiang Yan, Siming Wu, Minyi Hu, Hang Cao, Bei Li, Ye Lin, Tong Xiao, Jingbo Zhu.</i> <br>
-
-			<b>RankNAS: Efficient Neural Architecture Search by Pairwise Ranking. EMNLP 2021.</b> <a href="https://arxiv.org/abs/2109.07383">[pdf]</a> <br>
-			<i>Chi Hu, <u>Chenglong Wang</u>, Xiangnan Ma, Xia Meng, Yinqiao Li, Tong Xiao, Jingbo Zhu and Changliang Li</i> <br>
-            <br>
-            
-            <b><span style="color: rgb(0, 123, 255);">2020:</span></b> <br>
-			<b>The NiuTrans System for WNGT 2020 Efficiency Task. ACL Workshop 2020.</b><a href="https://arxiv.org/abs/2109.08008">[pdf]</a><br>
-			<i>Chi Hu, Bei Li, Yinqiao Li, Ye Lin, Yanyang Li, <u>Chenglong Wang</u>, Tong Xiao, Jingbo Zhu</i> <br>
-
-            </section>
-            <br>
-
-            <!-- 系统软件 -->
-            <section class="work info-unit">
-            <h2>
-            <i class="fa fa-cog" aria-hidden="true"></i><span style="color: rgba(77, 3, 156, 0.908);">Softwares</span></h2>
-            <hr/>
-            <b><a href="https://github.com/NiuTrans/Vision-LLM-Alignment">Vision-LLM-Alignment</a></b>:
-            an alignment system that contains the code for SFT, RLHF, and DPO, designed for vision-based LLMs, including the LLaVA models and the LLaMA-3.2-vision models. <br> 
-            <img src="https://img.shields.io/github/stars/NiuTrans/Vision-LLM-Alignment.svg?style=social&label=Star">
-            <img src="https://img.shields.io/github/forks/NiuTrans/Vision-LLM-Alignment.svg?style=social&label=Fork"><br>
-            <b><a href="https://github.com/wangclnlp/DeepSpeed-Chat-Extension">DeepSpeed-Chat-Extension</a></b>:
-            contains some extensions of deepspeed-chat for fine-tuning LLMs (SFT+RLHF/DPO). <br>
-            <img src="https://img.shields.io/github/stars/wangclnlp/DeepSpeed-Chat-Extension.svg?style=social&label=Star">
-            <img src="https://img.shields.io/github/forks/wangclnlp/DeepSpeed-Chat-Extension.svg?style=social&label=Fork"><br>
-            </section>
-            <br>
-
-            <!-- 学术活动 -->
-            <section class="work info-unit">
-            <h2>
-            <i class="fa fa-signal" aria-hidden="true"></i><span style="color: rgba(77, 3, 156, 0.908);">Professional Activities</span></h2>
-            <hr/>
+    <div>
+        <h2 class="noselect">Professional Activities</h2>
             Reviewer for ACL Rolling (aimed to ACL/EMNLP/NAACL) 2023/2024/2025 </br>
             Reviewer for NeurIPS 2025 </br>
+            Reviewer for AAAI 2025 </br>
             Reviewer for COLM 2024/2025 </br>
             Reviewer for COLING 2024 </br>
             Reviewer for CCL 2023 </br>
-            </br>
-            </section>
-        
-        
-        </section>
-    </section>
-</article>
+        </br>
+    </div>
 
+    <div class="noselect">
+        <a id="contact"></a>
+        <h2>Contact</h2>
+        You are welcome to contact me regarding my research! My email is clwang1119 [at] gmail [dot] com.
+    </div>
+</div>
 
+<div class="footer noselect">
+    <div class="footer-content">
+        <p>© Chenglong Wang | Document last updated on <time>Dec. 3, 2025</time> | <a href="https://info.flagcounter.com/8nnc"><img src="https://s11.flagcounter.com/mini/8nnc/bg_EBEBEB/txt_000000/border_EBEBEB/flags_0/" alt="Flag Counter" border="0"></a> </p> 
+    </div>
+</div>
 
-    <footer class="footer">
-        <p>© Chenglong Wang | Document last updated on 
-        <time>June. 24, 2025</time> | Recommended for use with IE browser| 
-        <a href="https://info.flagcounter.com/8nnc"><img src="https://s11.flagcounter.com/mini/8nnc/bg_EBEBEB/txt_000000/border_EBEBEB/flags_0/" alt="Flag Counter" border="0"></a></p>
-    </footer>
-
-    <script src="./assets/js/index.js"></script>
 </body>
-
 </html>
