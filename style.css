@@ -56,6 +56,13 @@ li::marker {color: var(--accent);}
 .publication.highlight {background-color: var(--highlight); width: auto; padding-top: 10px; padding-bottom: 10px; border-color: #f1dfa7; border-radius: 7px;}
 .publication-title {color: #18394e;}
 .publication-title:hover {color: var(--accent);}
+.paper-abstract {display: inline; margin-top: 0; font-style: normal;}
+.paper-abstract summary {display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none; padding: 2px 9px; border: 1px solid #c7d9e6; border-radius: 999px; background: #fff; color: var(--link); font-size: 0.9em; line-height: 1.45;}
+.paper-abstract summary::-webkit-details-marker {display: none;}
+.paper-abstract summary::before {content: "+"; display: inline-grid; place-items: center; width: 13px; height: 13px; border-radius: 50%; background: #e8f2f8; color: var(--link); font-size: 11px; line-height: 1;}
+.paper-abstract[open] summary {border-color: #f0b36d; background: #fff7e8; color: #bd5f10;}
+.paper-abstract[open] summary::before {content: "-"; background: #fde7c8; color: #bd5f10;}
+.paper-abstract p {display: block; margin: 8px 0 0; padding: 9px 11px; border-left: 3px solid #d7e6ef; background: rgba(255, 255, 255, 0.68); color: #4d5d6c; line-height: 1.55em;}
 .activity-list {line-height: 1.7em;}
 .activity-list div {position: relative; padding-left: 16px; margin-bottom: 4px;}
 .activity-list div::before {content: ""; position: absolute; left: 0; top: 0.78em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent);}
