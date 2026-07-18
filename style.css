@@ -74,6 +74,7 @@ li::marker {color: var(--accent);}
 .activity-list {line-height: 1.7em;}
 .activity-list div {position: relative; padding-left: 16px; margin-bottom: 4px;}
 .activity-list div::before {content: ""; position: absolute; left: 0; top: 0.78em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent);}
+.motto {margin: 0 0 16px; padding-left: 14px; border-left: 3px solid var(--accent); color: #4d5d6c; font-style: italic;}
 .press {width: 100px; height: 80px; border: 1px solid #def; margin-right: 12px; background-size: cover;}  
 .img-contain {background-size: contain !important;}
 .footer {border-top: 1px solid var(--line); width: 100%; max-width: 820px; margin: auto;}
