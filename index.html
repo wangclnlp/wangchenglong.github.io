@@ -13,9 +13,38 @@
     <link rel="apple-touch-icon" href="files/neu-logo.png">
     <link rel="icon" type="image/png" href="files/neu-logo.png">
     <link rel="manifest" href="files/site.webmanifest">
-    <link rel="stylesheet" href="style.css?v=20260530">
+    <link rel="stylesheet" href="style.css?v=20260718">
 </head>
 <body>
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path>
+    </symbol>
+    <symbol id="icon-scholar" viewBox="0 0 24 24">
+        <path d="M3 8 12 4l9 4-9 4z"></path><path d="M7 10v5c2.8 1.7 7.2 1.7 10 0v-5"></path>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8 9-4 3 4 3"></path><path d="m16 9 4 3-4 3"></path><path d="m14 6-4 12"></path>
+    </symbol>
+    <symbol id="icon-education" viewBox="0 0 24 24">
+        <path d="M6 4h10a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V5a1 1 0 0 1 1-1z"></path><path d="M8 4v13a3 3 0 0 0 3 3"></path><path d="M9 8h6"></path>
+    </symbol>
+    <symbol id="icon-news" viewBox="0 0 24 24">
+        <path d="M4 5h14v14H4z"></path><path d="M18 8h2v8a3 3 0 0 1-3 3"></path><path d="M7 9h7"></path><path d="M7 13h5"></path>
+    </symbol>
+    <symbol id="icon-paper" viewBox="0 0 24 24">
+        <path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M10 12h6"></path><path d="M10 16h6"></path>
+    </symbol>
+    <symbol id="icon-project" viewBox="0 0 24 24">
+        <path d="M4 7h7v6H4z"></path><path d="M13 11h7v6h-7z"></path><path d="M8 13v4h5"></path><path d="M11 10h2"></path>
+    </symbol>
+    <symbol id="icon-activity" viewBox="0 0 24 24">
+        <path d="M4 14h4l2-7 4 12 2-5h4"></path>
+    </symbol>
+    <symbol id="icon-contact" viewBox="0 0 24 24">
+        <path d="M5 5h14v14H5z"></path><path d="M8 9h8"></path><path d="M8 13h5"></path><path d="M16 16l3 3"></path>
+    </symbol>
+</svg>
 <div class="header noselect">
     <div class="header-div content row">
         <div class="header-profile-picture"></div>
@@ -27,9 +56,9 @@
                 Associate Professor, Northeastern University (Shenyang, China)
             </div>
             <div class="header-links">
-                <a class="btn" href="mailto:wangchenglong@cse.neu.edu.cn">Email</a>
-                <a class="btn" href="https://scholar.google.com/citations?user=_pu31FgAAAAJ&hl=en">Google Scholar</a>
-                <a class="btn" href="https://github.com/wangclnlp">GitHub</a> 
+                <a class="btn" href="mailto:wangchenglong@cse.neu.edu.cn"><svg class="btn-icon"><use href="#icon-mail"></use></svg>Email</a>
+                <a class="btn" href="https://scholar.google.com/citations?user=_pu31FgAAAAJ&hl=en"><svg class="btn-icon"><use href="#icon-scholar"></use></svg>Google Scholar</a>
+                <a class="btn" href="https://github.com/wangclnlp"><svg class="btn-icon"><use href="#icon-code"></use></svg>GitHub</a> 
                 <!-- <a class="btn" href="https://bsky.app/profile/ncklashansen.bsky.social">Bluesky</a> / -->
                 <!-- <a class="btn" href="https://www.linkedin.com/in/ncklas">LinkedIn</a> / -->
                 <!-- <a class="btn" href="files/cv.pdf">CV</a> -->
@@ -50,7 +79,7 @@
         </p>
     </div>
     <div>
-        <h2 class="noselect">Education/Experience</h2>
+        <h2 class="noselect"><svg class="section-icon"><use href="#icon-education"></use></svg>Education/Experience</h2>
         <ul>
             <li>Associate Professor, College of Computer Science and Engineering, Northeastern University, 2026 - now</li>
             <li>Ph.D., Northeastern University, 2021 - 2026</li>
@@ -58,12 +87,32 @@
             <li>B.S., Northeastern University, 2016 - 2020</li>
         </ul>
 
-        <h2 class="noselect">Selected Publications</h2>
+        <h2 class="noselect"><svg class="section-icon"><use href="#icon-news"></use></svg>News</h2>
+        <ul class="news-list">
+            <li><span class="bold">2026:</span> One paper was accepted by ACL 2026 and received the SAC Highlight Award, and two papers were accepted by ACL Findings 2026.</li>
+            <li><span class="bold">2026:</span> One paper was accepted by CVPR 2026.</li>
+            <li><span class="bold">2026:</span> Three papers were accepted by AAAI 2026.</li>
+            <li><span class="bold">2025:</span> One paper was accepted by NeurIPS 2025.</li>
+            <li><span class="bold">2025:</span> One paper was accepted by ICML 2025.</li>
+        </ul>
+
+        <h2 class="noselect"><svg class="section-icon"><use href="#icon-paper"></use></svg>Selected Publications</h2>
         <p>Papers sorted by recency. Representative papers are <span style="background-color: #fff8df">highlighted</span>. A full list can be found in <a href="https://scholar.google.com/citations?user=_pu31FgAAAAJ&hl=en">Google Scholar</a>. </p>
 
         <p class="bold">2026</p>
 
         <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/acl_2026_emotion.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" >On the Emotion Understanding of Synthesized Speech</a><br/>
+                Yuan Ge, Haishu Zhao, Aokai Hao, Junxiang Zhang, Bei Li, Xiaoqian Liu, <span class="bold">Chenglong Wang</span>, Jianjin Wang, Bingsen Zhou, Bingyu Liu, Jingbo Zhu, Zhengtao Yu, Tong Xiao
+                <br/>
+                <span class="italic">ACL, 2026</span> <span class="award-badge">SAC Highlight Award</span><br/>                <a class="btn btn-red" href="https://aclanthology.org/2026.acl-long.372.pdf">pdf</a> /
+                <details class="paper-abstract"><summary>Abstract</summary><p>This work studies whether speech emotion recognition models reliably transfer to synthesized speech. It finds that current models often fail to generalize because synthesized speech can introduce representation mismatches and shortcut-based emotion cues.</p></details>
+            </div>
+        </div>
+
+        <div class="highlight publication row clearfix">
             <div class="row-media" style="background-image: url(files/serm.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" >SERM: Self-Evolving Relevance Model with Agent-Driven Learning from Massive Query Streams</a><br/>
@@ -118,7 +167,7 @@
                 <a class="publication-title bold" >GRAM-R<sup>2</sup>: Self-Training Generative Foundation Reward Models for Reward Reasoning</a><br/>
                 <span class="bold">Chenglong Wang</span>, Yongyu Mu, Hang Zhou, Yifu Huo, Ziming Zhu, Jiali Zeng, Murun Yang, Bei Li, Tong Xiao, Xiaoyang Hao, Chunliang Zhang, Fandong Meng, Jingbo Zhu
                 <br/>
-                <span class="italic">AAAI, 2026</span><br/>                <a class="btn btn-red" href="https://arxiv.org/abs/2509.02492">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/GRAM/tree/main/extensions/GRAM-RR">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram-rr-68b2c8d83e35625bc57c7e81">models</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram-rr-68b2c8d83e35625bc57c7e81">dataset</a> /
+                <span class="italic">AAAI, 2026</span> <span class="award-badge">Oral</span><br/>                <a class="btn btn-red" href="https://arxiv.org/abs/2509.02492">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/GRAM/tree/main/extensions/GRAM-RR">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram-rr-68b2c8d83e35625bc57c7e81">models</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram-rr-68b2c8d83e35625bc57c7e81">dataset</a> /
 
                 <details class="paper-abstract"><summary>Abstract</summary><p>GRAM-R<sup>2</sup> extends generative foundation reward modeling with self-training on unlabeled data. It learns to produce both preference judgments and reward rationales, strengthening reward reasoning for ranking, task adaptation, and RLHF.</p></details>
             </div>
@@ -180,7 +229,7 @@
                 <a class="publication-title bold" >GRAM: A Generative Foundation Reward Model for Reward Generalization</a><br/>
                 <span class="bold">Chenglong Wang</span>, Yang Gan, Yifu Huo, Yongyu Mu, Qiaozhi He, Murun Yang, Bei Li, Tong Xiao, Chunliang Zhang, Tongran Liu, Jingbo Zhu
                 <br/>
-                <span class="italic">ICML, 2025</span><br/>                <a class="btn btn-red" href="https://www.arxiv.org/abs/2506.14175">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/GRAM">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram">models</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram">dataset</a> /
+                <span class="italic">ICML, 2025</span> <span class="award-badge">CCMT 2025 Highlight Poster</span><br/>                <a class="btn btn-red" href="https://www.arxiv.org/abs/2506.14175">pdf</a> / <a class="btn" href="https://github.com/NiuTrans/GRAM">code</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram">models</a> / <a class="btn" href="https://huggingface.co/collections/wangclnlp/gram">dataset</a> /
 
                 <details class="paper-abstract"><summary>Abstract</summary><p>GRAM trains a generative foundation reward model with both unlabeled and labeled data. By connecting generative modeling and pairwise preference objectives, it improves reward generalization for ranking, RLHF, and task adaptation.</p></details>
             </div>
@@ -321,7 +370,7 @@
 
 
     <div>
-        <h2 class="noselect">Select Open-Source Projects</h2>
+        <h2 class="noselect"><svg class="section-icon"><use href="#icon-project"></use></svg>Select Open-Source Projects</h2>
 
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(files/latexTrans.png);"></div>
@@ -341,9 +390,9 @@
     </div>
 
     <div>
-        <h2 class="noselect">Professional Activities</h2>
+        <h2 class="noselect"><svg class="section-icon"><use href="#icon-activity"></use></svg>Professional Activities</h2>
         <div class="activity-list">
-            <div>Area Chair for ACL/EMNLP 2026</div>
+            <div>Area Chair for ACL/EMNLP 2026, NLPCC 2026</div>
             <div>Reviewer for ACL Rolling Review 2023/2024/2025</div>
             <div>Reviewer for NeurIPS 2025, ICML 2026, AAAI 2025, COLM 2024/2025, COLING 2024, and CCL 2023</div>
             <div>Reviewer for NLP-related journals including IPM and ESWA</div>
@@ -353,7 +402,7 @@
 
     <div class="noselect">
         <a id="contact"></a>
-        <h2>Contact</h2>
+        <h2><svg class="section-icon"><use href="#icon-contact"></use></svg>Contact</h2>
         You are welcome to contact me regarding my research! <br/>
         My email is wangchenglong [at] cse [dot] neu [dot] edu [dot] cn.
     </div>
@@ -361,7 +410,7 @@
 
 <div class="footer noselect">
     <div class="footer-content">
-        <p>&copy; Chenglong Wang | Document last updated on <time>May 30, 2026</time> | <a href="https://info.flagcounter.com/8nnc"><img src="https://s11.flagcounter.com/mini/8nnc/bg_EBEBEB/txt_000000/border_EBEBEB/flags_0/" alt="Flag Counter" border="0"></a> </p> 
+        <p>&copy; Chenglong Wang | Document last updated on <time>July 30, 2026</time> | <a href="https://info.flagcounter.com/8nnc"><img src="https://s11.flagcounter.com/mini/8nnc/bg_EBEBEB/txt_000000/border_EBEBEB/flags_0/" alt="Flag Counter" border="0"></a> </p> 
     </div>
 </div>
 
