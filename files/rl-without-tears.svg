@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520">
+  <rect width="960" height="520" fill="#fffdfa"/>
+  <rect y="0" width="960" height="48" fill="#ffffff"/>
+  <line x1="0" y1="48" x2="960" y2="48" stroke="#ddd8d0"/>
+  <circle cx="22" cy="24" r="10" fill="#fff" stroke="#b4433a" stroke-width="3"/>
+  <text x="38" y="30" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202024">RL without Tears</text>
+  <text x="600" y="29" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6d717a">Online Reader</text>
+  <text x="700" y="29" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6d717a">Cheat Sheet</text>
+  <text x="805" y="29" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6d717a">Chapters</text>
+  <text x="884" y="29" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6d717a">Cite</text>
+  <text x="240" y="150" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#a33b34">COMPANION SITE · SEPTEMBER 2026</text>
+  <text x="240" y="238" font-family="Georgia, Times New Roman, serif" font-size="68" font-weight="700" fill="#212124">RL without Tears</text>
+  <text x="240" y="300" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#30323a">An Introduction in the Era of LLMs</text>
+  <text x="240" y="348" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#68707a">Chenglong Wang · Hang Zhou · Tongran Liu · Jingbo Zhu · Tong Xiao</text>
+  <rect x="240" y="400" width="100" height="42" rx="7" fill="#1f2026"/>
+  <text x="290" y="427" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Read online</text>
+  <rect x="352" y="400" width="118" height="42" rx="7" fill="#ffffff" stroke="#dadde1"/>
+  <text x="411" y="427" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202024">Download PDF</text>
+  <rect x="482" y="400" width="70" height="42" rx="7" fill="#ffffff" stroke="#dadde1"/>
+  <text x="517" y="427" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202024">GitHub</text>
+</svg>
